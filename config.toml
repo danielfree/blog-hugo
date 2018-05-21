@@ -123,6 +123,7 @@ copyright = "© This post is licensed under a Creative Commons Attribution-NonCo
 
   description = "时间足够你爱"
 
+  toc = true
   # Customization
   # Define the behavior of the sidebar
   # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,

@@ -17,7 +17,8 @@
           {{ end }}
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              {{ (replaceRE "<!--\\s*[t|T][o|O][c|C]\\s*-->" (printf "<h1 id=\"table-of-contents\">%s</h1>%s" (i18n "post.toc") .TableOfContents) .Content) | safeHTML }}
+                 {{ partial "table-of-contents.html" . }}
+                 {{ .Content | safeHTML }}
               {{ partial "post/gallery.html" . }}
             </div>
           </div>
